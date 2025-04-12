@@ -1,0 +1,10 @@
+subi $t0 $t1 10
+or $t1 $t2 $s0
+sw $s0 $s1 -4
+beq $s1 $s2 5
+nop
+andi $t1 $s2 7
+sll $t0 $t1 $s0
+jmp 1024
+lw $s2 $t0 15
+add $t0 $t1 $s2
